@@ -1,0 +1,29 @@
+- TIL
+    - sequence to sequnce 논문관련
+        - 논문 리뷰 영상을 시청하였고, 논문 Abstract에서
+            
+            “ When we used the LSTM to rerank the 1000 hypotheses produced by the aforementioned SMT system, its BLEU score increases to 36.5, which is close to the previous best result on this task.” 문장의 1000 hypotheses가 SMT에서 한 문장에 대한 1000개의 번역 결과들을 뽑은 것들과 논문에서 제시하는 LSTM으로 번역 돌린 결과를 다시 rerank했을 때, BLEU 점수가 더 높았다는 것임을 알 수 있었음.
+            
+        - 논문에서 아래의 표시된 내용이 “전체 dataset의 단어들을 표현하기 위해 onehot encoding 형식으로 벡터를 구성하지 않고, 1000차원의 벡터로 압축한다는 것(표현하고자 하는 전체 데이터수는 같지만 차원을 줄여서 단어들을 임베딩).” 을 알게 되었다.
+        
+        ex) [0,0,0,1,………..,0] → [1,30,150]
+        
+        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4e8e8480-143c-4bda-b8ac-ec5f985f55a4/Untitled.png)
+        
+    - github 특강 관련
+        - git의 사용법과 version 관리를 배우며 다음과 같은 공식을 배우게 되었다.
+            1. Head가 가리키는 버전이 새로만들어진 버전의 부모다.
+            2. 새로 만들어진 버전은 HEAD가 따라간다.
+            3. 각각의 버전은 버전이 만들어진 시점의 stage area의 스냅샷이다.
+            4. HEAD는 working directory와 stage area가 어떤 버전인지 알려준다.
+            5. Check out은 HEAD를 바꾼다.
+            6. Head는 현재시간
+            7. MASTER(main)는 마지막 시간
+        - 3번을 제외하고는 명확하게 이해가 안된 것들이 많다.
+        - vscode에서 github repository를 열고 다는 방법에 대해서 알게 되었다.
+            - 바뀐 파일에 대해서 저장을 하고 add를 하려고 하는데 add가 되지 않았고, 현재 연결된 repository가 새로만든 repository가 아닌 예전에 생성되었던 repository(DESKTOP(바탕화면))였었던 것을 알게 되었고, DESKTOP디렉토리에 들어가 숨겨진 파일인 .git을 삭제하면서 문제를 해결하였지만, vscode에서 아래와 같이 해결하는 방법이 있었다. repository이름을 클릭하고 repository 닫기를 누르는 것이다.
+                
+                ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/83da1ab9-138f-4b2e-9ad8-2988743d93a5/Untitled.png)
+                
+    - NLP 관련
+        - NLP 분야에는 어떤 것들이 있는지, 최신 동향은 어떠한지에 대해 학습하고 정리하였다.
